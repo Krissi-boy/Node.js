@@ -1,0 +1,23 @@
+<html>
+   <body>
+      
+      <form action = "http://127.0.0.1:8081/process_get" method = "GET">
+         Username: <input type = "text" name = "username">  <br>
+         Password: <input type = "text" name = "password">
+         <input type = "submit" value = "Submit">
+      </form>
+      
+  
+
+      <h3>File Upload:</h3>
+      Select a file to upload: <br />
+      
+      <form action = "http://127.0.0.1:8081/file_upload" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type="file" name="file" size="50" />
+         <br />
+         <input type = "submit" value = "Upload File" />
+      </form>
+      
+    </body>
+</html>
